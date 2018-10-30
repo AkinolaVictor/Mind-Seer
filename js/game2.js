@@ -97,13 +97,14 @@ function comp(a, b){
 
 }
 
-
 const wordss= document.querySelector('.word');
 wordss.addEventListener('click', function(){
 		comp(firstPart, secondPart);
 		firstPart=[];
 		secondPart=[];
-		console.log(formingWord.join(''));
+		if (formingWord.length === 5){
+	console.log(formingWord.join(''));
+}
 });
 
 
