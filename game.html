@@ -2,7 +2,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>game test</title>
+	<title>Mind Seer</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -10,42 +12,58 @@
 <div class="container">
 	<div class="intro">
 		<div class="intro1">
-			<p> This is <u>Mind Seer</u>, an app that reaveals the word the user has in mind. </p> 
+			<p> This is <u>Mind Seer</u>, an app that reaveals the word a user has in mind. </p> 
 			<span class="howTo">Click To Play</span>
-		</div>
+		</div> 
 
 		<div class="learn hide">
-			<p>HOW TO PLAY</p>
+			<p><u>HOW TO PLAY</u></p>
 				<ol class="left">
 					<li>1. Think of a Word within you.</li>
 					<li>2. Count the number of letters it has(i.e. get the length of the word).</li>
 					<li>3. Two questions would be asked about each letter in the word</li>
 					<li>4. Answer all these Questions</li>
-					<li>5. Click on reveal word to confirm the word</li>
+					<li>5. Click on "Reveal the word" to confirm the word</li>
 				</ol>
 			<p class="next">Click To START</p>
 		</div>
 		
 	</div>
 
+	
+
+	<div class="game hides">
+
+	<div id="container" class="hides">
+
+
+	</div>
+
+	<p class="word2 hide"><button>Next letter</button></p>
+	<p class="word3 hide"><button>Reveal the Word</button></p>
+	<p class="theWord hide">
+			The Word is: <span id="word"></span>
+	</p>
+
+	<p class="restart hide"><button>Restart</button></p>
+
+	</div>
+
 	<div class="wordLength hide">
-		<p> Enter the number of letters of the word you have in mind.</p>
 
 		<form id="wordProp">
-        <span class="style">Grid Height:</span>
-        <input type="number" id="wordNumber" name="height" min="1" value="1">
-        <input id ="button" type="submit">
-    </form>
-	</div>
+			<span class="form">Enter the Number of letters in the Word and click start<br/></span>
+			 <input type="number" name="wordNumber"  min="1" value="1" class="form">
 
-	<div class="game">
-		
-	</div>
+    	</form>
 
-	<div class="word">
-		
+
+		<button class="bttn" id="bttn">START</button><br/>
+
 	</div>
+		
+
 </div>
-<script src="js/gaming.js"></script>
+<script type="text/javascript" src="js/game3.js"></script>
 </body>
 </html>
