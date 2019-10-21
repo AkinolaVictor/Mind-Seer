@@ -190,7 +190,7 @@ for (let f=0; f<form.length-1; f++){
 engine();
 }
 
-
+//time to compare the options
 function compare1(a, b){
 	//let matches=[];
 	for (let i of a){
